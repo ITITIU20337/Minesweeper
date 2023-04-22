@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" 
-        content="IE=edge">
-        <meta name="viewport" 
-        content="width=device-width, initial-scale=1.0">
-        <title>Minesweeper</title>
-        <link rel="stylesheet" href="./assets/styles.css">
-        <script src="minesweeper.js" ></script>
-    </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <script src="minesweeper.js"></script>
+</head>
 
 <body>
     <div class="programs">
@@ -19,81 +18,87 @@
         </div>
 
         <div class="program how-to-play">
-                <h2>❓</h2>
-                <h3>How to play </h3>
+            <h2>❓</h2>
+            <h3>How to play </h3>
         </div>
 
         <div class="program">
-                <a href="https://github.com/Ginnit08/Minesweeper" style="text-decoration: none;color: black;">
-                    <img src="./assets/git.png" alt="">
-                    <h3>Github</h3>
-                </a>
+            <a href="https://github.com/Ginnit08/Minesweeper" style="text-decoration: none;color: black;">
+                <img src="./assets/git.png" alt="">
+                <h3>Github</h3>
+            </a>
         </div>
     </div>
 
     <div class="board-container">
-            <div class="title"><img class="title-img" src="./assets/Minesweeper_1992.webp" alt=""><h1 class="title__title">mine-sweeper</h1></div>
-            <div class="mine-left">
-                <div id="mines-count">0</div> 
-                <a href="" class="restart">
-                    <img class="restart-face" src="./assets/smile.png" alt="">
-                </a>
-                <div id="timer"></div>
-            </div>
-            <div id="board">
-            </div>
-            <button id="flag-button">🚩</button>
-            <button id="undo">
-                ⏪ 
-            </button>
+        <div class="title"><img class="title-img" src="./assets/Minesweeper_1992.webp" alt="">
+            <h1 class="title__title">mine-sweeper</h1>
+        </div>
+        <div class="mine-left">
+            <div id="mines-count">0</div>
+            <a href="" class="restart">
+                <img class="restart-face" src="./assets/smile.png" alt="">
+            </a>
+            <div id="timer"></div>
+        </div>
+        <div id="board">
+        </div>
+        <button id="flag-button">🚩</button>
+        <button id="undo">
+            ⏪
+        </button>
+    </div>
+
+    <div class="taskbar">
+        <div class="windows"><img src="./assets/xp202.png" alt="">
+            <h1><em>Start</em></h1>
+        </div>
+        <div class="minesweeper-app"></div>
+    </div>
+
+
+    <div class="overlay">
+
+        <div class="choose">
+            <h1>choose flag <span class="close-btn">X</span></h1>
+            <button id="flag1">🚩</button>
+            <button id="flag2">🏳️</button>
+            <button id="flag3">🏴</button>
+            <h1>choose bomb</h1>
+            <button id="bomb1">💣</button>
+            <button id="bomb2">💥</button>
+            <button id="bomb3">🧨</button>
         </div>
 
-        <div class="taskbar">
-            <div class="windows"><img src="./assets/xp202.png" alt=""> <h1><em>Start</em></h1></div>
-            <div class="minesweeper-app"></div>
+    </div>
+
+
+
+    <div class="overlay2">
+        <div class="howToPlay">
+            <h1>How to Play</h1>
+
+            <p class="howToPlay__line">click on a tile to play, If you click a tile with a mine, you lose</p>
+            <p class="howToPlay__line">the Number in a tile show the number of mines around that tile</p>
+            <p class="howToPlay__line">In this game, there is only 10 mines. Your goal is to click all the tile without
+                the mines inside</p>
+            <p class="howToPlay__line">Mark the tile that you think there posibibly be a bomb to avoid accidentally
+                click with the flag 🚩</p>
+            <p class="howToPlay__line">Click the smiley face to restart the game or the ⏪ to undo</p>
+
+
+            <span class="close-btn2">X</span>
         </div>
 
 
-        <div class="overlay">
-            
-            <div class="choose">
-                <h1>choose flag <span class="close-btn">X</span></h1>
-                <button id="flag1">🚩</button>
-                <button id="flag2">🏳️</button>
-                <button id="flag3">🏴</button>
-                <h1>choose bomb</h1>
-                <button id="bomb1">💣</button>
-                <button id="bomb2">💥</button>
-                <button id="bomb3">🧨</button>
-            </div>
-           
-        </div>
-
-
-
-        <div class="overlay2">
-            <div class="howToPlay">
-                <h1>How to Play</h1>
-               
-                    <p class="howToPlay__line">click on a tile to play, If you click a tile with a mine, you lose</p>
-                    <p class="howToPlay__line">the Number in a tile show the number of mines around that tile</p>
-                    <p class="howToPlay__line">In this game, there is only 10 mines. Your goal is to click all the tile without the mines inside</p>
-                    <p class="howToPlay__line">Mark the tile that you think there posibibly be a bomb to avoid accidentally click with the flag 🚩</p>
-                    <p class="howToPlay__line">Click the smiley face to restart the game or the ⏪ to undo</p>
-                    
-               
-                <span class="close-btn2">X</span>
-            </div>
-            
-           
-        </div>
+    </div>
 
 </body>
 
 
 <script>
 
-    
+
 </script>
 
 </html>
