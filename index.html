@@ -97,7 +97,13 @@
 
 
 <script>
-
+    document.querySelector("#timer").innerHTML =time
+   
+    setInterval(setTimer,1000)
+    function setTimer(){
+        time++;
+        document.querySelector("#timer").innerHTML =time;
+    }
 
 </script>
 
